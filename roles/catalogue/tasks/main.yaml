@@ -40,4 +40,4 @@
     name: common
     tasks_from: restart
   tag:
-  - tag1
+   - tag1
