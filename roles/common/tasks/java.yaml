@@ -1,0 +1,22 @@
+- name: enable maven 3.9
+  command: dnf module enable maven:3.9 -y
+
+- name: install maven and java25
+  dnf:
+    name:
+    - java-25-openjdk-devel
+    - maven-openjdk25 # installing this so that we no need to set JAVA_HOME again
+    - mysql
+    state: present
+
+- name: build {{ component }}
+  command: mvn clean package
+  args:
+    chdir: /app
+  # environment:
+  #   JAVA_HOME: "{{ java25.stdout | dirname | dirname  }}"
+
+- name: move {{ component }} jar file
+  command: mv target/{{ component }}.jar {{ component }}.jar
+  args:
+    chdir: /app
