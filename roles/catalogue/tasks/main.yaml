@@ -36,6 +36,8 @@
   when: product_count.stdout | int == 0
 
 - name: restart application
-  include_role:
+  import_role:
     name: common
     tasks_from: restart
+  tag:
+  - tag1
