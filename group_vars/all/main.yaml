@@ -8,8 +8,8 @@ ansible_password: "{{ lookup('amazon.aws.aws_secret', 'roboshop/dev/ansible', re
 mysql_root_password: "{{ lookup('amazon.aws.aws_secret', 'roboshop/dev/mysql', region='us-east-1') | from_json | json_query('mysql_root_password')  }}"
 rabbitmq_user: "{{ vault_rabbitmq_user }}"
 rabbitmq_password: "{{ vault_rabbitmq_password }}"
-#shipping_db_user: "{{ vault_shipping_db_user }}"
-#shipping_db_password: "{{ vault_shipping_db_password }}"
+shipping_db_user: "{{ vault_shipping_db_user }}"
+shipping_db_password: "{{ vault_shipping_db_password }}"
 
 mongodb_host: mongodb.padmasaivivekaluru.shop
 redis_host: redis.padmasaivivekaluru.shop
