@@ -11,7 +11,7 @@ rabbitmq_password: "{{ vault_rabbitmq_password }}"
 #shipping_db_user: "{{ vault_shipping_db_user }}"
 #shipping_db_password: "{{ vault_shipping_db_password }}"
 
-mongodb_host: mongodb.padmasaivivekaluru.shop
+mongodb: mongodb.padmasaivivekaluru.shop
 redis_host: redis.padmasaivivekaluru.shop
 mysql_host: mysql.padmasaivivekaluru.shop
 rabbitmq_host: rabbitmq.padmasaivivekaluru.shop
