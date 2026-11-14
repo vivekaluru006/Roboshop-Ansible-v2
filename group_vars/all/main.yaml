@@ -11,12 +11,12 @@ rabbitmq_password: "{{ vault_rabbitmq_password }}"
 #shipping_db_user: "{{ vault_shipping_db_user }}"
 #shipping_db_password: "{{ vault_shipping_db_password }}"
 
-mongodb_host: mongodb.daws92s.store
-redis_host: redis.daws92s.store
-mysql_host: mysql.daws92s.store
-rabbitmq_host: rabbitmq.daws92s.store
-catalogue_host: catalogue.daws92s.store
-user_host: user.daws92s.store
-cart_host: cart.daws92s.store
-shipping_host: shipping.daws92s.store
-payment_host: payment.daws92s.store
+mongodb_host: mongodb.padmasaivivekaluru.shop
+redis_host: redis.padmasaivivekaluru.shop
+mysql_host: mysql.padmasaivivekaluru.shop
+rabbitmq_host: rabbitmq.padmasaivivekaluru.shop
+catalogue_host: catalogue.padmasaivivekaluru.shop
+user_host: user.padmasaivivekaluru.shop
+cart_host: cart.padmasaivivekaluru.shop
+shipping_host: shipping.padmasaivivekaluru.shop
+payment_host: payment.padmasaivivekaluru.shop
