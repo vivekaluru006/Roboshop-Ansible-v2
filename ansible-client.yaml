@@ -23,7 +23,7 @@
     register: ec2_output
 
   - name: print ec2 creation output
-     debug:
+    debug:
        msg: "{{ ec2_output }}"
 
   - name: create R53 record
