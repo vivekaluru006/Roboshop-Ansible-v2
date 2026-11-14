@@ -39,5 +39,5 @@
   import_role:
     name: common
     tasks_from: restart
-  tag:
-   - tag1
+  tags:
+  - tag1
